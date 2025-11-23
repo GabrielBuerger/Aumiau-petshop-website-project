@@ -1,0 +1,162 @@
+
+@font-face {
+    font-family: "pramukh extrabold italic";
+    font-weight: 800;
+    font-style: italic;
+    src: url(Fonte/PramukhRounded-ExtraboldItalic.woff);
+}
+
+@font-face {
+    font-family: "pramukh regular";
+    font-weight: 500;
+    src: url(Fonte/PramukhRounded-Regular.woff);
+}
+
+/*
+rgb(255, 200, 125)
+rgb(255, 165, 165)
+*/
+
+/* ---------- body */
+
+body{
+    background: #6767a8ff url(imagens/background2.png);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: block;
+}
+
+header {
+    /* layout */
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* Proportions */
+    width:100%;
+    height: 200px;
+    /* format */
+    background-color: rgb(255, 200, 125);
+}
+
+main {
+    /* layout */
+    z-index: 2;
+    margin: 200px 10% 0px 10%;
+    /* Proportions */
+    height: 2000px;
+    width: 80%;
+    /* format */
+    background-color: aliceblue;
+}
+
+footer {
+    /* layout */
+    z-index: 1;
+    margin-left: -10%;
+    margin-bottom: -10%;
+    margin-top: -10%;
+    /* Proportions */
+    height: 200px;
+    width: 120%;
+    background-color: #c4c4c4ff;
+    /* format */
+    text-align: center;
+}
+
+/* ---------- header */
+
+.logo{
+    /* layout */
+    position: absolute;
+    top: 0;
+    /* proportions */
+    height: 50%;
+}
+
+nav {
+    /* layout */
+    position: absolute;
+    bottom: 0;
+    /* proportions */
+    height: 50%;
+    width: 100%;
+    /* format */
+    background-color: rgb(255, 255, 255);
+    border: solid rgb(255, 255, 255) 3px;
+}
+
+/* ---------- Logo */
+
+header img {
+    /* layout */
+    float: left;
+    height: 100%;
+    /* format */
+    border: 3px solid rgb(255, 255, 255);
+}
+
+h1 {
+    /* layout */
+    margin-left: 110px;
+    padding-left: 10px;
+    /* proportions */
+    font-size: 3rem;
+    /* format */
+    font-family: "pramukh regular";
+}
+
+h1 a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* ---------- Nav */
+
+nav ul {
+    /* layout */
+    display: inline-flex;
+    position: absolute;
+    bottom: -23%;
+    padding-left: 2%;
+    padding-right: 2%;
+    /* proportions */
+    height: 100%;
+    width: 96%;
+    /* format */
+    list-style: none;
+}
+
+nav ul li {
+    /* layout */
+    display: inline-block;
+    flex-grow: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+    /* proportions */
+    height: 90%;
+    flex-basis: 20%;
+    /* format */
+    background-color: rgb(224, 224, 224);
+    text-align: center;
+    line-height: 500%;
+
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: "pramukh regular";
+    font-size: 40px;
+    color: #6767a8ff;
+}
+
+nav ul li:hover, nav ul li#selected{
+    background-color: #c4c4c4ff;
+} 
+nav ul li a:visited {
+    color: none;
+}
+
+/* ---------- Footer */
+
+footer h2 a{
+    text-decoration: none;
+    color: #000;
+}

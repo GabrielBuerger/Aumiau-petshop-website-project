@@ -1,0 +1,136 @@
+/* css Study more:
+element divisor
+cursor
+float
+display: outer inner
+hover (pseudo-class, when mouse is over the element)
+*/
+
+
+/* 
+Display:
+    External(itself among it's sibilings): block (default), inline
+    Internal(upon it's children): flow (default), flex, grid, ruby, table
+    hibrid: inline-block
+
+conteiners
+    genéricos: 
+        - div (block)
+        - span(inline)
+    semânticos: 
+        - <header> (cabeçalho);
+        - <nav> (links);
+        - <main> (conteúdo);
+        - <aside> (sidebar);
+        - <article> 
+        - <section> (tema);
+        - <footer> (rodapé);
+        - <form> (entrada de dados do cliente).
+
+Position
+    static: Top-down standard
+    relative: relative to the original position
+    absolute: relative to its parent conteiner
+    fixed: relative to the viewport
+    sticky: static to fixed 
+
+unidades de medida:
+    px: tamanho fixo em pixel 
+    %: relativo ao dispositivo
+    em: relativo ao tamanho do container
+    rem: relativo ao tamanho base de texto (padrão: 16px)
+
+seletores
+    1- universal: *
+    2- texto: <h1>, <br>, <p>, <pre>
+    3- classe: .
+    4- id: #
+    5- filho: [tag]>[tag] (elem. diretamente descendentes)
+    6- descendente: [tag] [tag] (elem. de quaisquer gerações)
+    7- irmão adjacente: [tag]+[tag] (apenas a tag diretamente posterior)
+    8- irmão geral: [tag]~[tag] (todas as tags posteriores)
+
+especificidade: ordem de precendência 
+    (!important > inline style > ID > (pseudo)classe/atrib. > texto > universal)
+    seletores iguais, o último será expresso (Exç.: o que possui o selo "!important")
+
+    hereditariedade de estilo: em cascata (Exç.: border, background)
+
+
+
+
+
+
+
+
+site building ways
+1 code:
+css
+2 no code:
+Figma, wordpress, webflow
+
+Layout
+    Visual hierarchy:
+        most important elements vs. least important elements
+            proximity: collection of elements conotate a space;
+            size;
+            contrast: size, color weight or opacity;
+            alignment: lines informs structure;
+    grid system
+        12:8:4 :12 colomns: pc, 8 colomns tablet, 4 colomns cellphone
+    spacing system (between colomns)
+        8 point grid system
+Color
+    accessibility: high contrast
+    proportions 60:30:10 : 
+        60% neutral (bg, text): gray, black or white
+        30%: brand colors
+        10%: accents (for buttons or actions)
+typography
+    fonts types:
+        for copy (books, blogs, newspaper...) 
+            serif: high readability, traditional, used for body copy (books, magazines, news papers...)
+                old style, transitional, modern
+            sans serif (without serif): informal, versitile, clean, minimal, modern, high readability
+                grotesc, neo grotesc, humanist
+        for display (atract atention)
+            slab serif*
+            geometric sans serif*
+            script (cursive): not for body copy (titles and very short copy)
+                formal (elegant), casual (relaxed ordinary writting)
+            calligraphic: brush and painting
+            handwriting: no clear structure nor definition 
+            blackletter/gothic: medieval style
+            display/decoration: experimental
+                grafiti style, tatto fonts
+    text elements:
+        <main>'s <h1>: biggest thing on website, what the page is about
+        <h2>...: organization and attention guidance
+        <p>: no hard decoration for better readability
+    scales:
+        major third = 1.25rem
+            base <p>: 16px
+            h6 = 20px, h5 = 25px, h4 = 32px, h3 = 40px, h2 = 50px, h1 = 62px
+    letter-spacing: 
+        <p>: default
+        h6= -0.5%, h4= -1%, h2= -1.75%, h1= -2%
+        (reduced spacing looks cleaner)
+    line-height: 
+        <p>: 150%
+        h4= 130%, h2= 110%, h1= 100%
+        (little text -> big margin -> better readability
+        big text -> no margin -> more impactfull)
+programming:
+    html, css, js, php...
+conversion:
+    goal: 
+        1- sell product
+        2- sign up for 
+        3- lead(possible client)
+    cta (call to action)
+    brand showing:
+        people buy from
+        clarity: knowing the brand
+        trust: social proof (reviews, testemonials...)
+        fealing: brand values and motivations
+*/  
