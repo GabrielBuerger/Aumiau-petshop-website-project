@@ -1,228 +1,223 @@
+/* ---------- media query */
 
-@font-face {
-    font-family: "pramukh extrabold italic";
-    font-weight: 800;
-    font-style: italic;
-    src: url(Fonte/PramukhRounded-ExtraboldItalic.woff);
-}
+    /* ---------------- tablet, desktop and laptop */
+    @media(min-width: 431px) and (max-width: 1920px){
 
-@font-face {
-    font-family: "pramukh regular";
-    font-weight: 500;
-    src: url(Fonte/PramukhRounded-Regular.woff);
-}
+    }
 
-/*
-rgb(255, 200, 125)
-rgb(255, 165, 165)
-*/
+    /* ---------------- mobile */
+    @media(min-width:320px) and (max-width: 430px){
+        nav 
+    }
 
-/* ---------- body */
+/* ---------- main font */
 
-body{
-    z-index: 0;
-    background: #6767a8ff url(imagens/background2.png);
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    display: block;
-}
+    @font-face {
+        font-family: "pramukh extrabold italic";
+        font-weight: 800;
+        font-style: italic;
+        src: url(Fonte/PramukhRounded-ExtraboldItalic.woff);
+    }
 
-header {
-    /* layout */
-    z-index: 3;
-    position: fixed;
-    top: 0;
-    left: 0;
-    /* Proportions */
-    width: 100%;
-    height: 200px;
-    /* format */
-    background-color: rgb(255, 200, 125);
-}
+    @font-face {
+        font-family: "pramukh regular";
+        font-weight: 500;
+        src: url(Fonte/PramukhRounded-Regular.woff);
+    }
 
-main {
-    /* layout */
-    z-index: 1;
-    display: grid;
-    grid-template-columns: 25% 75%;
-    margin: 200px 10% 0px 10%;
-    /* Proportions */
-    height: 2000px;
-    width: 80%;
-    /* format */
-    background-color: aliceblue;
-}
+/* ---------- general config */
 
-footer {
-    /* layout */
-    z-index: 3;
-    margin-left: -10%;
-    margin-bottom: -10%;
-    /* Proportions */
-    height: 200px;
-    width: 120%;
-    background-color: #c4c4c4ff;
-    /* format */
-    text-align: center;
-}
+    h1 a{
+        text-decoration: none;
+        color: #d65b5b;
+    }
 
-/* ---------- Main */
+    a:visited{
+        color: none;
+    }
 
-#sidebar{
-    /* layout */
-    z-index: 2;
-    /* proportions */
-    height: 100%;
-    /* format */
-    padding-left: 5%;
-    background-color: rgb(224, 224, 224);
-}
-
-#products{
-    /* layout */
-    margin: 2%;
-    /* proportions */
-    height: 98%;
-    /* format */
-    padding: 2%;
-    border: #c4c4c4ff solid 1px; 
-}
-
-#products ul{
-    position: relative;
-    display: grid;
-    rows: 10%;
-    margin:0;
-    padding:0;
-    height: 100%;
-    width: 100%;
-    list-style:none;
-    border: solid 1px #c4c4c4ff;
-}
-
-.product{
-    width: 100%;
-    height: 90%;
-    margin: 1%;
-    border: solid 1px #c4c4c4ff;
-}
-
-.product_image{
-    height:100%;
-    width: 10em;
-    float: left
-}
-
-.description{
-    padding: 5px;
-}
-
-.image {
-    /* layout */
-    /* proportions */
-    width: 80%;
-    /* format */
-    border: #c4c4c4ff solid 1px;
-}
+    body{
+        z-index: 0;
+        background: #dfe0df;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
 
 /* ---------- header */
+    header {
+        /* layout */
+        z-index: 3;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        /* Proportions */
+        width: 100%;
+        height: 120px;
+        /* format */
+        background-color: #f5cd77;
+        
+    }
+    header img{
+        /* layout */
+        margin-left: 20%;
+        /* proportions */
+        height: 90%;
+        /* format */
+        border: #d65b5b 6px solid;
+        border-top: #dfe0df;
+        border-radius: 0 0 25px 25px;
+    }
 
-.logo{
-    /* layout */
-    position: absolute;
-    top: 0;
-    /* proportions */
-    height: 50%;
-}
-
-nav {
-    /* layout */
-    position: absolute;
-    bottom: 0;
-    /* proportions */
-    height: 50%;
-    width: 100%;
-    /* format */
-    background-color: rgb(255, 255, 255);
-    border: solid rgb(255, 255, 255) 3px;
-}
-
-/* ---------- Logo */
-
-header img {
-    /* layout */
-    float: left;
-    height: 100%;
-    /* format */
-    border: 3px solid rgb(255, 255, 255);
-}
-
-h1 {
-    /* layout */
-    margin-left: 110px;
-    padding-left: 10px;
-    /* proportions */
-    font-size: 3rem;
-    /* format */
-    font-family: "pramukh regular";
-}
-
-h1 a{
-    text-decoration: none;
-    color: rgb(214, 91, 91);
-}
+    h1 {
+        /* layout */
+        padding-left: 10px;
+        margin-left: 5%;
+        margin-top: 20px;
+        /* proportions */
+        font-size: 5em;
+        /* format */
+        font-family: "pramukh regular";
+    }
 
 /* ---------- Nav */
+    @media(min-width: 581px) and (max-width: 1920px){
+    nav {
+        /* layout */
+        position: absolute;
+        top: 120px;
+        left: 0;
+        /* proportions */
+        width: 100%;
+        height: 110px;
+        /* format */
+        background: #fff7e8;
+        
+    }
 
-nav ul {
-    /* layout */
-    display: inline-flex;
-    position: absolute;
-    bottom: -23%;
-    padding-left: 2%;
-    padding-right: 2%;
-    /* proportions */
-    height: 100%;
-    width: 96%;
-    /* format */
-    list-style: none;
-}
+    nav ul.menu {
+        /* layout */
+        display: inline-flex;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        padding-left: 2%;
+        padding-right: 2%;
+        /* proportions */
+        width: 100%;
+        /* format */
+        list-style: none;
+    }
 
-nav ul li {
-    /* layout */
-    display: inline-block;
-    flex-grow: 1;
-    margin-left: 5px;
-    margin-right: 5px;
-    /* proportions */
-    height: 90%;
-    flex-basis: 20%;
-    /* format */
-    background-color: rgb(224, 224, 224);
-    text-align: center;
-    line-height: 500%;
+    nav ul li {
+        /* layout */
+        flex-grow: 1;
+        display: inline-block;
+        /* proportions */
+        height: 80px;
+        margin-right: 15px;
+        /* format */
+        border-left: 1px solid #dfe0df;
+        border-right: 1px solid #dfe0df;
+        text-align: center;
+        line-height: 500%;
+        border-radius: 25px 15px;
 
-}
-nav ul li a{
-    text-decoration: none;
-    font-family: "pramukh regular";
-    font-size: 40px;
-    color: #6767a8ff;
-}
+    }
+    nav ul li a{
+        text-decoration: none;
+        font-family: "pramukh regular";
+        font-size: 40px;
+        color: #6767a8ff;
+    }
 
-nav ul li:hover, nav ul li#selected{
-    background-color: #c4c4c4ff;
-} 
-nav ul li a:visited{
-    color: none;
-}
+    nav ul li:hover, nav ul li#selected{
+        background-color: #dfe0df;
+    }
+    }
 
-a:hover{
-    color: rgb(214, 91, 91);
-}
+    @media(min-width:320px) and (max-width: 580px){
+    nav {
+        /* layout */
+        position: absolute;
+        top: 120px;
+        left: 0;
+        /* proportions */
+        width: 100%;
+        height: 80%;
+        /* format */
+        background: #fff7e8;
+    }
+
+    nav ul.menu {
+        /* layout */
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* proportions */
+        width: 100%;
+        /* format */
+        list-style: none;
+    }
+
+    nav ul li {
+        /* layout */
+        display: inline-block;
+        /* proportions */
+        height: 80px;
+        width: 80%;
+        /* format */
+        border-left: 1px solid #dfe0df;
+        border-right: 1px solid #dfe0df;
+        text-align: center;
+        line-height: 500%;
+        border-radius: 25px 15px;
+
+    }
+    nav ul li a{
+        text-decoration: none;
+        font-family: "pramukh regular";
+        font-size: 40px;
+        color: #6767a8ff;
+    }
+
+    nav ul li:hover, nav ul li#selected{
+        background-color: #dfe0df;
+    }
+    }
+
+/* ---------- main */
+
+    main {
+        /* layout */
+        z-index: 1;
+        display: grid;
+        grid-template-columns: 25% 75%;
+        margin: 200px 10% 0px 10%;
+        /* Proportions */
+        height: 2000px;
+        width: 80%;
+        /* format */
+        background-color: #fff7e8;
+    }
 
 /* ---------- Footer */
 
-footer h2 a{
-    text-decoration: none;
-    color: #000;
-}
+    footer {
+        /* layout */
+        z-index: 3;
+        margin-left: -10%;
+        margin-bottom: -10%;
+        /* Proportions */
+        height: 200px;
+        width: 120%;
+        background-color: #fff7e8;
+        /* format */
+        text-align: center;
+    }
+
+    footer h2 a{
+        text-decoration: none;
+        color: #000;
+    }
