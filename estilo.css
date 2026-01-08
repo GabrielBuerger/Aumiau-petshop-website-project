@@ -1,16 +1,4 @@
-/* ---------- media query */
-
-    /* ---------------- tablet, desktop and laptop */
-    @media(min-width: 431px) and (max-width: 1920px){
-
-    }
-
-    /* ---------------- mobile */
-    @media(min-width:320px) and (max-width: 430px){
-        nav 
-    }
-
-/* ---------- main font */
+/* ---------- general config */
 
     @font-face {
         font-family: "pramukh extrabold italic";
@@ -25,8 +13,6 @@
         src: url(Fonte/PramukhRounded-Regular.woff);
     }
 
-/* ---------- general config */
-
     h1 a{
         text-decoration: none;
         color: #d65b5b;
@@ -37,6 +23,7 @@
     }
 
     body{
+        padding: 0;
         z-index: 0;
         background: #dfe0df;
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -44,26 +31,27 @@
 
 /* ---------- header */
     header {
-        /* layout */
         z-index: 3;
         position: fixed;
         top: 0;
         left: 0;
         display: flex;
         flex-direction: row;
-        margin: 0;
-        /* Proportions */
         width: 100%;
         height: 120px;
-        /* format */
         background-color: #f5cd77;
-        
     }
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     header img{
         /* layout */
         margin-left: 20%;
         /* proportions */
-        height: 90%;
+        height: 85%;
         /* format */
         border: #d65b5b 6px solid;
         border-top: #dfe0df;
@@ -153,6 +141,7 @@
     nav ul.menu {
         /* layout */
         position: absolute;
+        display: flex;
         top: 0;
         left: 0;
         /* proportions */
@@ -163,7 +152,8 @@
 
     nav ul li {
         /* layout */
-        display: inline-block;
+        justify-content: center;
+        margin-top: 20px;
         /* proportions */
         height: 80px;
         width: 80%;
@@ -173,8 +163,8 @@
         text-align: center;
         line-height: 500%;
         border-radius: 25px 15px;
-
     }
+
     nav ul li a{
         text-decoration: none;
         font-family: "pramukh regular";
@@ -184,8 +174,7 @@
 
     nav ul li:hover, nav ul li#selected{
         background-color: #dfe0df;
-    }
-    }
+    }}
 
 /* ---------- main */
 
