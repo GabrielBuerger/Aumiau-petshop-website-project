@@ -13,6 +13,14 @@
         src: url(Fonte/PramukhRounded-Regular.woff);
     }
 
+    ul {
+        padding: 0;
+    }
+
+    li{
+        list-style: none;
+    }
+
     h1 a{
         text-decoration: none;
         color: #d65b5b;
@@ -23,18 +31,22 @@
     }
 
     body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
         padding: 0;
+        width: 100%;
         z-index: 0;
         background: #dfe0df;
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 
+
+
 /* ---------- header */
     header {
         z-index: 3;
-        position: fixed;
-        top: 0;
-        left: 0;
         display: flex;
         flex-direction: row;
         width: 100%;
@@ -69,144 +81,85 @@
         font-family: "pramukh regular";
     }
 
-/* ---------- Nav */
-    @media(min-width: 581px) and (max-width: 1920px){
-    nav {
-        /* layout */
-        position: absolute;
-        top: 120px;
-        left: 0;
-        /* proportions */
+
+
+/* ---------- Navbar */
+nav {
         width: 100%;
-        height: 110px;
-        /* format */
-        background: #fff7e8;
-        
-    }
-
-    nav ul.menu {
-        /* layout */
-        display: inline-flex;
-        justify-content: center;
-        position: absolute;
-        top: 0;
-        padding-left: 2%;
-        padding-right: 2%;
-        /* proportions */
-        width: 100%;
-        /* format */
-        list-style: none;
-    }
-
-    nav ul li {
-        /* layout */
-        flex-grow: 1;
-        display: inline-block;
-        /* proportions */
-        height: 80px;
-        margin-right: 15px;
-        /* format */
-        border-left: 1px solid #dfe0df;
-        border-right: 1px solid #dfe0df;
-        text-align: center;
-        line-height: 500%;
-        border-radius: 25px 15px;
-
-    }
-    nav ul li a{
-        text-decoration: none;
-        font-family: "pramukh regular";
-        font-size: 40px;
-        color: #6767a8ff;
-    }
-
-    nav ul li:hover, nav ul li#selected{
-        background-color: #dfe0df;
-    }
-    }
-
-    @media(min-width:320px) and (max-width: 580px){
-    nav {
-        /* layout */
-        position: absolute;
-        top: 120px;
-        left: 0;
-        /* proportions */
-        width: 100%;
-        height: 80%;
-        /* format */
+        height: fit-content;
         background: #fff7e8;
     }
-
-    nav ul.menu {
-        /* layout */
-        position: absolute;
+nav ul.menu {
         display: flex;
-        top: 0;
-        left: 0;
-        /* proportions */
-        width: 100%;
-        /* format */
-        list-style: none;
+        justify-content: space-around;
+        width: 76%;
+        gap: 20px;
     }
 
-    nav ul li {
-        /* layout */
-        justify-content: center;
-        margin-top: 20px;
-        /* proportions */
-        height: 80px;
-        width: 80%;
-        /* format */
+    nav ul.menu li {
+        flex-grow: 1;
+        height: fit-content;
+        padding-top: 5px;
         border-left: 1px solid #dfe0df;
         border-right: 1px solid #dfe0df;
         text-align: center;
-        line-height: 500%;
+        line-height: 400%;
         border-radius: 25px 15px;
     }
 
-    nav ul li a{
-        text-decoration: none;
-        font-family: "pramukh regular";
-        font-size: 40px;
-        color: #6767a8ff;
+@media(min-width: 581px) and (max-width: 1920px){
+    nav ul.menu{
+        margin: 2% 12%;
     }
+    nav ul.menu li{
+        width: 20%;
+    }
+}
 
-    nav ul li:hover, nav ul li#selected{
-        background-color: #dfe0df;
+@media(min-width:320px) and (max-width: 580px){
+    nav ul.menu {
+        margin: 5%;
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul.menu li{
+        width: 100%;
     }}
+
+nav ul li a{
+    text-decoration: none;
+    font-family: "pramukh regular";
+    font-size: 40px;
+    color: #6767a8ff;
+}
+
+nav ul li:hover, nav ul li#selected{
+    background-color: #dfe0df;}
 
 /* ---------- main */
 
-    main {
-        /* layout */
+@media(min-width: 581px) and (max-width: 1920px){
+        main {
         z-index: 1;
         display: grid;
         grid-template-columns: 25% 75%;
-        margin: 200px 10% 0px 10%;
-        /* Proportions */
-        height: 2000px;
         width: 80%;
-        /* format */
+        height: 1000px;
         background-color: #fff7e8;
-    }
+    }}
 
 /* ---------- Footer */
 
-    footer {
-        /* layout */
-        z-index: 3;
-        margin-left: -10%;
-        margin-bottom: -10%;
-        /* Proportions */
-        height: 200px;
-        width: 120%;
-        background-color: #fff7e8;
-        /* format */
-        text-align: center;
-    }
+footer {
+    width: 100%;
+    z-index: 3;
+    height: 200px;
+    background-color: #fff7e8;
+    text-align: center;
+}
 
-    footer h2 a{
-        text-decoration: none;
-        color: #000;
-    }
+footer h2 a{
+    text-decoration: none;
+    color: #000;
+}
