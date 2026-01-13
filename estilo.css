@@ -97,7 +97,7 @@ nav ul.menu {
     }
 
     nav ul.menu li {
-        flex-grow: 1;
+        flex: 1;
         height: fit-content;
         padding-top: 5px;
         border-left: 1px solid #dfe0df;
@@ -107,12 +107,24 @@ nav ul.menu {
         border-radius: 25px 15px;
     }
 
-@media(min-width: 581px) and (max-width: 1920px){
+@media(min-width: 769px) and (max-width: 1920px){
     nav ul.menu{
         margin: 2% 12%;
     }
     nav ul.menu li{
         width: 20%;
+    }
+}
+
+@media(min-width:581px) and (max-width: 768px){
+    nav ul.menu{
+        margin: 2% 12%;
+        flex-wrap: wrap;
+    }
+    nav ul.menu li{
+        min-width: 40%;
+        
+        height: 20%;
     }
 }
 
@@ -139,14 +151,32 @@ nav ul li:hover, nav ul li#selected{
 
 /* ---------- main */
 
-@media(min-width: 581px) and (max-width: 1920px){
-        main {
+main {
         z-index: 1;
         display: grid;
         grid-template-columns: 25% 75%;
-        width: 80%;
         height: 1000px;
         background-color: #fff7e8;
+        border-top: #dfe0df 1px solid;
+        border-bottom: #dfe0df 1px solid;
+        border-radius: 10px;
+    }
+
+@media(min-width: 769px) and (max-width: 1920px){
+    main{
+        width: 80%;
+        border-top: #dfe0df 1px solid;
+    }}
+
+@media(min-width:581px) and (max-width: 768px){
+    main{
+        width: 100%;
+    }}
+
+@media(min-width:320px) and (max-width: 580px){
+    main{
+        width: 100%;
+        border-top: #dfe0df 1px solid;
     }}
 
 /* ---------- Footer */
